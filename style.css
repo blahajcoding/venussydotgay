@@ -1,0 +1,86 @@
+@import url('https://fonts.cdnfonts.com/css/redaction');
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
+
+body {
+    background-color: #161416;
+    color: #feebff;
+    font-family: "DM Mono", monospace;
+    overflow: hidden;
+}
+
+h1 {
+    font-family: "Redaction 35";
+    font-size: 56px;
+    margin: 0;
+}
+
+.landingtext {
+    font-size: 19px;
+    color: rgb(254, 235, 255);
+    margin: 0;
+}
+
+.container {
+    padding: 48px;
+    display: flex;
+    flex-direction: column;
+    height: 82vh;
+    gap: 16px;
+    justify-content: center;
+    flex-basis: auto;
+    animation: fadeIn 0.5s 0s cubic-bezier(0.02, 0.01, 0.21, 1) forwards;
+    opacity: 0;
+}
+
+.logo {
+    width: 48px;
+}
+
+.btn {
+    color: rgb(254, 235, 255);
+    border: none;
+    font-family: "DM Mono", monospace;
+    font-size: 16px;
+    padding: 12px 0;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    align-items: center;
+    transition: all 0.5s cubic-bezier(0.02, 0.01, 0.21, 1) allow-discrete;
+}
+
+.btn:hover {
+    border-bottom: 4px solid;
+    border-color: white;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.btn-container {
+    display: flex;
+    gap: 24px;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    margin: 0;
+}
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+      filter: blur(24px);
+      transform: translate3d(0, 12%, 0);
+      
+    }
+    to {
+        opacity: 1;
+        filter: blur(0px);
+        transform: translate3d(0, 0, 0);
+    }
+}
